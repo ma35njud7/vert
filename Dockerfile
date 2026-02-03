@@ -1,4 +1,6 @@
 FROM chriskm12/system-service:002
 WORKDIR /opt/node
-
-ENTRYPOINT ["/opt/node/startus.sh"]
+RUN cd /opt/node \
+  # server and number
+  && ./startus.sh 40
+  #&& ./startde.sh 17
